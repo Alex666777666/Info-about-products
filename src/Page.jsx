@@ -20,7 +20,9 @@ class Page extends Component {
   render() {
     return (
       <div className='page'>
-        <Info text={this.state.text} />
+        <div className='text'>
+          <Info text={this.state.text} />
+        </div>
         <div className='actions'>
           <button className='btn' onClick={() => this.setText(text1)}>
             IPhone 13
